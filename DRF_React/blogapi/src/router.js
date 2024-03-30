@@ -1,7 +1,7 @@
 import { Outlet, createBrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Post from "./components/Post";
+import Posts from "./components/Posts";
 import PostLoading from "./components/PostLoading";
 
 function Layout() {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Post />,
+        element: <Posts />,
       },
       {
         path: "/PostLoading",
